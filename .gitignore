@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Ham veri git'e girmez (maç başına ~1300 parquet).
+# Türetilmiş curated/ katmanı GİRER — Streamlit Cloud repodan deploy ediyor.
+data/raw/
+
+.streamlit/secrets.toml
+.env
+
+# ingest çıktı logu
+ingest.log
+
+# ekran goruntusu ara dosyalari
+*.tmp

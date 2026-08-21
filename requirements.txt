@@ -1,0 +1,7 @@
+nba_api==1.11.4
+pandas==3.0.5
+pyarrow==25.0.1
+duckdb==1.5.5
+plotly==6.9.0
+streamlit==1.62.0
+pytest==9.1.1
