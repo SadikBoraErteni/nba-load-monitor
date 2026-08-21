@@ -99,7 +99,9 @@ türetilmiş katman.
 - [x] 3 — DuckDB katmanı + `sql/` sorguları
 - [x] 4 — pytest, metrik fonksiyonları
 - [x] 5 — Streamlit arayüzü
-- [x] 6 — README yazıldı (İngilizce, ekran görüntüleriyle); deploy kaldı
+- [x] 6 — README + deploy. Canlı: https://nba-load-monitor.streamlit.app/
+      (Streamlit Community Cloud, Python 3.12, `app.py`, main branch; secret yok —
+       veri repodaki `data/curated/` parquet'lerinden okunuyor. main'e push = otomatik redeploy.)
 - [ ] 7 — (opsiyonel) Parquet'i S3'e taşı, AWS maddesi gerçek olsun
       → ertelendi: AWS hesabı yok, kredi kartı gerekiyor. `src/config.py::DATA_DIR`
         tek ayar olarak soyutlandı, sonradan eklemek yeniden yazma gerektirmiyor.

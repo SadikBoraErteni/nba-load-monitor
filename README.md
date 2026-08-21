@@ -1,5 +1,9 @@
 # NBA Physical Load Monitor
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nba-load-monitor.streamlit.app/)
+
+**Live app → [nba-load-monitor.streamlit.app](https://nba-load-monitor.streamlit.app/)**
+
 Tracking athlete workload from NBA public player-tracking data, and flagging when a
 player's recent load has spiked against their own recent baseline.
 

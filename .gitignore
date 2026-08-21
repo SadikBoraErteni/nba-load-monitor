@@ -3,15 +3,15 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Ham veri git'e girmez (maç başına ~1300 parquet).
-# Türetilmiş curated/ katmanı GİRER — Streamlit Cloud repodan deploy ediyor.
+# Raw data stays out of git (~1300 parquet files, one per game).
+# The derived curated/ layer IS committed — Streamlit Cloud deploys from the repo.
 data/raw/
 
 .streamlit/secrets.toml
 .env
 
-# ingest çıktı logu
+# ingest run log
 ingest.log
 
-# ekran goruntusu ara dosyalari
+# scratch files from screenshots
 *.tmp
