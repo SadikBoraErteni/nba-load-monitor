@@ -154,6 +154,22 @@ pytest                                  # 41 tests
 streamlit run app.py
 ```
 
+## Working with an AI agent
+
+This was built with Claude Code doing the edits, against a `CLAUDE.md` at the repo root
+that carries the project brief: the decisions already settled, the shape of the data, and
+the rules the agent works under — metrics live in SQL rather than pandas, every metric
+function gets a test, raw data never enters git.
+
+That file is in Turkish. It is a working file rather than documentation, and it holds the
+decision log: why load is distance alone, why ACWR is suppressed for the first 28 days,
+why the league table filters on `games_28d >= 8`. All three are explained in English above.
+
+The agent is quick at the mechanical part and unreliable at judgment. It reached for
+`boxscoreplayertrackv2`, which no longer exists in `nba_api`, and proposed a load score
+that multiplied volume by mean speed. Both were caught by checking the endpoint and the
+literature rather than the output. Reviewing what comes back is the work.
+
 ## Limitations
 
 The public feed gives **total** distance and **mean** speed per game. There is no
